@@ -21,37 +21,39 @@ public class SelectionSort {
 		 */
 		
 		
-		  System.out.println(); 
+		/*
+		 * System.out.println();
+		 * 
+		 * int arr3[] =
+		 * {20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10
+		 * ,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15
+		 * ,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6
+		 * ,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,
+		 * 18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,
+		 * 5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,
+		 * 14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,
+		 * 2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,
+		 * 16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,
+		 * 20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,
+		 * 13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,
+		 * 3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,
+		 * 7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,
+		 * 18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,
+		 * 5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,
+		 * 14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,
+		 * 2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,
+		 * 16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,
+		 * 20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,
+		 * 13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,
+		 * 3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,
+		 * 7,10,13,17,16,12,14,19,18,15,3,11};
+		 */
 		  
-		  int arr3[] =
-		  {20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10
-		  ,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15
-		  ,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6
-		  ,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,
-		  18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,
-		  5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,
-		  14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,
-		  2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,
-		  16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,
-		  20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,
-		  13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,
-		  3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,
-		  7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,
-		  18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,
-		  5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,
-		  14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,
-		  2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,
-		  16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,
-		  20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,
-		  13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,
-		  3,11,20,1,4,2,0,9,5,8,6,7,10,13,17,16,12,14,19,18,15,3,11,20,1,4,2,0,9,5,8,6,
-		  7,10,13,17,16,12,14,19,18,15,3,11}; 
-		  
-			/*
-			 * System.out.println("shell sort");
-			 * 
-			 * for (int i : shellSort(arr3)) { System.out.print(i + " "); }
-			 */
+			int arr7[] = {10,14,28,11,7,16,30,50,25,18};
+			  System.out.println("shell sort");
+			  
+			  for (int i : shellSort(arr7)) { System.out.print(i + " "); }
+			 
 		 
 		
 			/*
@@ -61,12 +63,11 @@ public class SelectionSort {
 			 */
 		
 			
-			int arr5[] = { 4, 6, 2, 5, 7, 9, 1, 3 };
-			System.out.println("quick sort");
-			quickSort(arr5, 0, arr5.length - 1);
-			for (int i : arr5) {
-				System.out.print(i + " ");
-			}
+			/*
+			 * int arr5[] = { 4, 6, 2, 5, 7, 9, 1, 3 }; System.out.println("quick sort");
+			 * quickSort(arr5, 0, arr5.length - 1); for (int i : arr5) { System.out.print(i
+			 * + " "); }
+			 */
 			 
 		
 			/*
@@ -74,10 +75,10 @@ public class SelectionSort {
 			 * countSort(arr6); for(int i:arr6) { System.out.print(i+" "); }
 			 */  
 		  
-		int arr7[] = {29,83,471,36,91,8};
-		System.out.println("raidx sort");
-		radixSort(arr7);
-		for(int i:arr7) { System.out.print(i+" "); }
+			/*
+			 * int arr8[] = {29,83,471,36,91,8}; System.out.println("raidx sort");
+			 * radixSort(arr7); for(int i:arr7) { System.out.print(i+" "); }
+			 */
 		
 	}
 	
@@ -92,7 +93,7 @@ public class SelectionSort {
 		 *and at every parent iteration we can start iterating the child iteration through i+1th thorugh last
 		 *element
 		 *
-		 *
+		 *TC at best/worst/average - O(N^2) SC- O(1)
 		 */
 		for(int i=0;i<arr.length-1;i++) {
 			
@@ -122,6 +123,8 @@ public class SelectionSort {
 		 * 
 		 * and at every parent iteration we can iterate the child iteration through <n-1-ith 
 		 * element
+		 * 
+		 * TC - best: O(N) worst/avergae: O(N^2) SC-O(1)
 		 */
 		
 		for(int i=0;i<=arr.length-1;i++) {
@@ -148,8 +151,10 @@ public class SelectionSort {
 	
 	
 	public static int[] insertionSort(int[] arr) {
-		//Insertion sorting will take up each element and comapare with its left ele's and puts into its correct position
-				
+		//Insertion sorting will take up each element and comapare with its left most ele's and puts into its correct position
+		//best TC:O(n)
+		//worst/average TC:O(n^2)
+		// SC: O(1)
 		for(int i=1;i<arr.length;i++) {
 			
 			int swap=0;
@@ -161,9 +166,7 @@ public class SelectionSort {
 				arr[j] = temp;			
 				j--; // becoz it will comparing the left elements for swapping to its correct position
 			}
-//			System.out.println(j);
-			//best TC:O(n)
-			//worst/average TC:O(n^2)
+			
 		}
 		return arr;
 	}
@@ -179,6 +182,10 @@ public class SelectionSort {
 				}
 				
 			}
+			for(int i:arr) {
+				System.out.print(i+ " ");
+			}
+			System.out.println();
 		}
         return arr;
 	}
@@ -186,6 +193,8 @@ public class SelectionSort {
 	
 	public static void mergeSort(int[] arr, int low, int high) {
 		//Merge sort will follow the divide and merge pattern
+		//TC: O(NlogN) - Best/worst/average
+		//SC: O(N) using list during the merge operation
 		if(low>=high) return;
 		
 		int mid = (low+high)/2;
@@ -234,6 +243,10 @@ public class SelectionSort {
 	
 	
 	public static void quickSort(int[] arr, int low, int high) {
+		//pivot and partition index operation 
+		////TC: O(NlogN) - Best/average
+		// O(N^2) in worst case
+		//SC: O(1)
 		if(low<high) {
 		int partitionIndex = quickSortFunction(arr,low,high);
 		quickSort(arr,low,partitionIndex-1);
@@ -320,7 +333,11 @@ public class SelectionSort {
 	
 	public static void radixSort(int[] arr) {
 		//29 83 471 36 91 8
+		//TC: O(NK) worst/average k-number of digits in largest number
+		//TC: best case O(N+K) if it is already sorted
+		//SC: O(N+K)
 		int max = Arrays.stream(arr).max().getAsInt();
+		
 		
 		for (int place = 1; max / place > 0; place *= 10)  
 		    countingSort(arr, arr.length, place); 
